@@ -7,11 +7,12 @@
 
 //Iniciamos con una interfaz con propiedades compartidas
 export default interface Place {
-  id?: string;
+  id?: string; // Lo ponemos nosotros o lo genera Firebase por defecto
+  latitude?: number; //Opcional
+  longitude?: number; //Opcional
+  googleMaps?: string; //Opcional
   name: string;
   descripcion: string;
-  // latitude: number;
-  // longitude: number;
   pathImage: string[]; //Array de Paths de Imágenes
 }
 
