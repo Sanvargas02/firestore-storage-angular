@@ -15,8 +15,8 @@ export default interface Place {
   pathImage: string[]; //Array de Paths de Imágenes
 }
 
-//Interfaz para Atractivos Turísticos
-interface Attraction extends Place {}
+//Interfaz para Prestadoes Turisticos
+export default interface prestadorTuristico {}
 
 
 //Se puede crear otro tipo de interfaces con el fin de modelar otros tipos de datos distintos
