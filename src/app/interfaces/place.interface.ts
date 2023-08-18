@@ -13,7 +13,7 @@ export default interface Place {
   googleMaps?: string; //Opcional
   name: string;
   descripcion: string;
-  pathImage: string[]; //Array de Paths de Imágenes
+  pathImage?: string[]; //Array de Paths de Imágenes opcional ya que no se pueden exportar por la referencia
 }
 
 //Interfaz para Prestadoes Turisticos
