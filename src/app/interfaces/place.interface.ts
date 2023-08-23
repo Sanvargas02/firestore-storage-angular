@@ -7,18 +7,43 @@
 
 //Iniciamos con una interfaz con propiedades compartidas
 export default interface Place {
-  id?: string; // Lo ponemos nosotros o lo genera Firebase por defecto
-  latitude?: number; //Opcional
-  longitude?: number; //Opcional
-  googleMaps?: string; //Opcional
+  id?: string; // NO aparece en el Formulario, Firebase lo establece por defecto.
   name: string;
   descripcion: string;
-  pathImage?: string[]; //Array de Paths de Imágenes opcional ya que no se pueden exportar por la referencia
+  latitud?: number; //Opcional - Aparece en el formulario
+  longitud?: number; //Opcional - Aparece en el formulario
+  googleMaps?: string; //Opcional - Aparece en el formulario
+  meGusta?: number; //Opcional - Se establece un contador que sólo trae el dato en caso de que presionen un ícono, similar al de editar o borrar. Y se enlaza con el id del sitio.
+  pathImage?: string[]; //Array de Paths de Imágenes opcional ya que no se pueden exportar la información en un Json
 }
 
 //Interfaz para Prestadoes Turisticos
-export default interface prestadorTuristico {}
+export interface prestadorTuristico extends Place {
+  //id
+  //name: string;
+  rntRm: string;
+  //descripcion: string;
+  servicios: string;
+  zona: string;
+  municipio: string;
+  direccion: string;
+  indicacionesAcceso: string;
+  //latitud?: number;
+  //longitud?: number;
+  //googleMaps?: string;
+  whatsapp: number;
+  celular1: number;
+  celular2: number;
+  facebook: string;
+  instagram: string;
+  pagWeb: string;
+  correo: string;
+  horarioAtencion: string;
+  //pathImage?: string[];
+}
+
+const nuevo = (int: prestadorTuristico) => {}
 
 
 //Se puede crear otro tipo de interfaces con el fin de modelar otros tipos de datos distintos
-//Ejemplos sería categorías
+//Ejemplo sería categorías
