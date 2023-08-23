@@ -40,6 +40,7 @@ interface PrestadorTuristico extends Place {
   correo: string;
   horarioAtencion: string;
   //pathImage?: string[];
+  //meGusta?: number;
 }
 
 // Interfaz Atractivo turístico
@@ -63,6 +64,7 @@ interface AtractivoTuristico extends Place {
   contactoAdmin: string;
   redSocial: string;
   //pathImage?: string[];
+  //meGusta?: number;
 }
 
 // Interfaz Municipio
@@ -86,7 +88,35 @@ interface Municipio extends Place {
   //longitud?: number;
   //googleMaps?: string;
   //pathImage?: string[];
+  //meGusta?: number;
 }
+
+// Interfaz Ruta
+interface Ruta extends Place {
+  //id
+  //nombre: string
+  informacionAdicional: string;
+  agenciaDeViajes: string;
+  //descripcion: string;
+  //latitud?: number;
+  //longitud?: number;
+  //googleMaps?: string;
+  //pathImage?: string[];
+  //meGusta?: number;
+}
+
+
+//EJEMPLOS
+// const ruta: Ruta = {
+//   informacionAdicional: '',
+//   agenciaDeViajes: '',
+//   name: '',
+//   descripcion: 'Ruta de prueba',
+//   id: '',
+//   latitud: 1,
+//   longitud: 2,
+//   googleMaps: ''
+// }
 
 //Ejemplo Objeto
 // const municipio: Municipio = {
