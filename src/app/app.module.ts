@@ -10,20 +10,13 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 
-import { ListadoComponent } from './admin-dashboard/components/listado/listado.component';
-import { AgregarComponent } from './admin-dashboard/components/agregar/agregar.component';
-import { LoginComponent } from './auth/components/login/login.component';
-import { RecuperacionComponent } from './auth/components/recuperacion/recuperacion.component';
-
+//Módulos independientes
+import { AuthModule } from './auth/auth.module';
 import { AdminDashboardModule } from './admin-dashboard/admin-dashboard.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListadoComponent,
-    AgregarComponent,
-    LoginComponent,
-    RecuperacionComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +25,7 @@ import { AdminDashboardModule } from './admin-dashboard/admin-dashboard.module';
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage()),
+    AuthModule,
     AdminDashboardModule
   ],
   providers: [],
