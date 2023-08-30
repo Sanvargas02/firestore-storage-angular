@@ -8,10 +8,18 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { ListadoComponent } from './admin-dashboard/components/listado/listado.component';
+import { AgregarComponent } from './admin-dashboard/components/agregar/agregar.component';
+import { LoginComponent } from './auth/components/login/login.component';
+import { RecuperacionComponent } from './auth/components/recuperacion/recuperacion.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListadoComponent,
+    AgregarComponent,
+    LoginComponent,
+    RecuperacionComponent,
   ],
   imports: [
     BrowserModule,
