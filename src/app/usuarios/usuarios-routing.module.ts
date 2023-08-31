@@ -14,7 +14,7 @@ const routes: Routes = [
       {path: 'editar', component: EditarComponent},
       {path: 'listado', component: ListadoComponent},
       {path: 'usuario', component: UsuarioComponent},
-      {path: '**', redirectTo: 'usuario'}
+      {path: '**', redirectTo: 'listado'}
     ]
   }
 

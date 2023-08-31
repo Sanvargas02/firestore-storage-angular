@@ -25,6 +25,9 @@ const routes: Routes = [
   declarations: [],
   imports: [
     RouterModule.forChild( routes ) //Importamos el RouterModule.forChild
+  ],
+  exports: [
+    RouterModule // Importante TENEMOS QUE EXPORTARLO PARA QUE FUNCIONEN LAS RUTAS
   ]
 })
 export class AuthRoutingModule { }
