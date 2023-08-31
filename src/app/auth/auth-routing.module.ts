@@ -15,7 +15,7 @@ const routes: Routes = [
       { path: 'forgot', component: ForgotComponent },
       { path: 'login', component: LoginComponent },
       { path: 'registro', component: RegistroComponent },
-      { path: '**', redirectTo: 'login' }
+      { path: '**', redirectTo: 'login' } //Ruta por defecto, la primera ruta a la que va a ingresar en el módulo
     ]
   }
 ]

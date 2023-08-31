@@ -1,11 +1,19 @@
 <!-- Rutas -->
-<!-- <router-outlet></router-outlet> -->
 
 <h1>Rutas y Lazy Load</h1>
 
+<!-- Rutas -->
 <ul>
   <li>
-    <a href="">Auth</a>
+    <a routerLink="/auth/login">Login</a>
+  </li>
+  <li>
+    <a routerLink="/auth/registro">Registro</a>
+  </li>
+  <li>
+    <a routerLink="/auth/forgot">Forgot</a>
   </li>
 </ul>
 
+<!-- Selector de las Rutas -->
+<router-outlet></router-outlet>
