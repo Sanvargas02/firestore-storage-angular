@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+//Componentes -> Mis 3 Rutas o Páginas
+import { RegistroComponent } from './pages/registro/registro.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ForgotComponent } from './pages/forgot/forgot.component';
 import { AuthRoutingModule } from './auth-routing.module';
-import { LoginComponent } from './components/login/login.component';
+
 
 
 @NgModule({
   declarations: [
-    LoginComponent
+    RegistroComponent,
+    LoginComponent,
+    ForgotComponent
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
-  ],
-  exports: [
-    LoginComponent
+    AuthRoutingModule //Importamos el routing child
   ]
 })
 export class AuthModule { }

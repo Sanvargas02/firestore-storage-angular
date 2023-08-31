@@ -11,7 +11,6 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 
 //Módulos independientes
-import { AuthModule } from './auth/auth.module';
 import { AdminDashboardModule } from './admin-dashboard/admin-dashboard.module';
 
 @NgModule({
@@ -25,7 +24,6 @@ import { AdminDashboardModule } from './admin-dashboard/admin-dashboard.module';
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage()),
-    AuthModule,
     AdminDashboardModule
   ],
   providers: [],
